@@ -1,0 +1,50 @@
+.Message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  .Message_Top {
+    display: flex;
+  }
+  .Message_Img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-right: 10px;
+  }
+  .Message_Text {
+    padding: 10px;
+    border-radius: 20px;
+    // background-color: #1da1f2;
+    background: linear-gradient(
+      90deg,
+      rgba(28, 127, 214, 1) 0%,
+      rgba(34, 181, 209, 1) 100%
+    );
+    color: white;
+
+    max-width: 300px;
+    // if the user type aaaaaaaa so lone without spaces it overflow out of the div
+    // to prevent it use
+    overflow-wrap: break-word;
+  }
+  .Message_Bottom {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+.Message.Own {
+  align-items: flex-end;
+}
+.Message.Own .Message_Text {
+  // background-color: rgb(218, 212, 212);
+  background: linear-gradient(
+    90deg,
+    rgb(145, 142, 142) 0%,
+    rgba(1, 56, 66, 1) 100%
+  );
+  // color: black;
+  color: white;
+}

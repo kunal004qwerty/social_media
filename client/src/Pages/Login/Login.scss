@@ -1,0 +1,150 @@
+.Login {
+  width: 100%;
+  height: 100vh;
+  // background-color: #f0f2f5;
+  background-color: #050c19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .Login_Wrapper {
+    width: 70%;
+    height: 70%;
+
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .Login_Left,
+  .Login_Right {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .Login_Left {
+    height: 100%;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(ellipse at 3% 25%, #002a53 0%, #040c18 100%);
+
+    .Login_Logo {
+      font-size: 50px;
+      color: #1775ee;
+      font-weight: 500;
+    }
+    .Login_Desc {
+      font-size: 24px;
+      text-align: center;
+      color: #81afdd;
+    }
+  }
+  .Login_Logo {
+    filter: drop-shadow(0 0 0.75rem #1775ee);
+    font-size: 50px;
+    color: #1775ee;
+    font-weight: 500;
+  }
+  .Login_Desc {
+    font-size: 24px;
+    text-align: center;
+    color: #81afdd;
+  }
+
+  .Login_Right {
+    border: 2px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 100%;
+    .Login_Box {
+      // height: 300px;
+      height: 100%;
+      padding: 20px;
+      // background-color: white;
+      background: radial-gradient(ellipse at 3% 25%, #002a53 0%, #040c18 100%);
+
+      // border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .Login_Input {
+      height: 50px;
+      border-radius: 10px;
+      border: 1px solid gray;
+      // color: gray;
+      color: #81afdd;
+      font-size: 18px;
+      background: linear-gradient(90deg, #002a53 0%, #040c18 100%);
+
+      padding-left: 20px;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .Login_Button {
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      background-color: #1775ee;
+      color: #f0f2f5;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+    .Button {
+      transition: 0.2s ease-out;
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #245fac;
+      }
+      &:active {
+        background-color: #1775ee;
+      }
+    }
+
+    .Login_Forget {
+      text-align: center;
+      color: #1775ee;
+    }
+    .Login_Register_Button {
+      width: 70%;
+      align-self: center;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      background-color: #1775ee;
+      color: #f0f2f5;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+}
+
+.Register_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Login_Fail {
+  color: red;
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+.SideBar_Friends {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  .SideBar_Friends_Desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .SideBar_Friend_Img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  .SideBar_Friend_Follow_Button {
+    float: right;
+    padding: 6px 10px;
+    color: white;
+    background: linear-gradient(to right, #1c7ed6 0%, #22b7d0 100%);
+    border: none;
+
+    &:hover {
+      background: linear-gradient(to right, #14538a 0%, #18879b 100%);
+      border: none;
+    }
+  }
+}

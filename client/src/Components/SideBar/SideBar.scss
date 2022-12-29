@@ -1,0 +1,72 @@
+.SideBar {
+  flex: 3.1;
+
+  height: calc(100vh - 50px);
+
+  // --------SCROLL_BAR
+  overflow-y: scroll;
+
+  margin-top: 50px;
+
+  position: sticky;
+  top: 50px;
+
+  .SideBar_Wrapper {
+    padding: 20px;
+    // !---------------------------SIDEBAR_LIST
+    .SideBar_List {
+      margin: 0;
+      padding: 0;
+
+      .SideBar_List_Item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .SideBar_Icon {
+          margin-right: 15px;
+        }
+      }
+    }
+    //!-----------------------
+    .SideBar_Button {
+      width: 150px;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: 500;
+    }
+    .SideBar_hr {
+      margin: 20px 0;
+    }
+    //! --------------------------- SIDEBAR_FRIEND_LIST
+    .SideBar_Friends_List {
+      padding: 0;
+      margin: 0;
+      margin-top: 10px;
+      // .SideBar_Friends {
+      //   display: flex;
+      //   align-items: center;
+      //   margin-bottom: 15px;
+
+      //   .SideBar_Friend_Img {
+      //     width: 32px;
+      //     height: 32px;
+      //     border-radius: 50%;
+      //     object-fit: cover;
+      //     margin-right: 10px;
+      //   }
+      // }
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+}

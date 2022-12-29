@@ -1,0 +1,167 @@
+.RightBar {
+  flex: 3.4;
+
+  margin-top: 50px;
+
+  .RightBar_Wrapper {
+    padding: 20px 20px 0 0;
+
+    .Birthday_Container {
+      display: flex;
+      align-items: center;
+
+      .Birthday_Img {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+      }
+      .Birthday_text {
+        font-weight: 300;
+        font-size: 15px;
+      }
+    }
+    .RightBar_Add {
+      width: 100%;
+      border-radius: 10px;
+      margin: 30px 0;
+    }
+    // !---------------------------FRIEND_LIST
+    .RightBar_Title {
+      margin-bottom: 20px;
+    }
+
+    .RightBar_Friend_List {
+      // when ever you used list dont forget
+      //  to do margin, padding =0 becuse it's has default both value
+      padding: 0;
+      margin: 0;
+
+      // .RightBar_Friend {
+      //   display: flex;
+      //   align-items: center;
+      //   margin-bottom: 15px;
+      //   .RightBar_Profile_Img_Container {
+      //     margin-right: 10px;
+      //     position: relative;
+      //     .RightBar_Profile_Img {
+      //       width: 40px;
+      //       height: 40px;
+      //       object-fit: cover;
+      //       border-radius: 50%;
+      //     }
+      //     .RightBar_Online {
+      //       width: 12px;
+      //       height: 12px;
+      //       border-radius: 50%;
+      //       background-color: limegreen;
+      //       position: absolute;
+      //       top: -2px;
+      //       right: 0;
+      //       border: 2px solid white;
+      //     }
+      //   }
+      //   .RightBar_Username {
+      //     font-weight: 500;
+      //   }
+      // }
+    }
+  }
+}
+
+.RightBar_Tilte_Div {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+
+  .Edit_Icon {
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-right: 10px;
+  }
+}
+
+.RightBar_Title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.RightBar_Info {
+  margin-bottom: 30px;
+}
+.RightBar_Info_Item {
+  margin-bottom: 10px;
+}
+.RightBar_Info_Key {
+  font-weight: 500;
+  margin-right: 15px;
+  color: #555;
+}
+.RightBar_Info_Value {
+  font-weight: 300;
+}
+.RightBar_Followings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.RightBar_Following {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.RightBar_Following_Img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.follow_Status {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+
+  // border: 1px solid black;
+
+  padding-bottom: 10px;
+
+  .follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    .follow_Num {
+      font-weight: bold;
+    }
+    .follow_text {
+      color: gray;
+    }
+  }
+
+  hr {
+    width: 85%;
+    border: 1px solid rgb(206, 204, 204);
+  }
+
+  div {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .vl {
+    // position: absolute;
+    left: 50%;
+    width: fit-content;
+    height: 50px;
+    border-left: 2px solid rgb(206, 204, 204);
+  }
+}

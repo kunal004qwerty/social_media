@@ -1,0 +1,28 @@
+.RightBar_Friend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    .RightBar_Profile_Img_Container {
+      margin-right: 10px;
+      position: relative;
+      .RightBar_Profile_Img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .RightBar_Online {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: limegreen;
+        position: absolute;
+        top: -2px;
+        right: 0;
+        border: 2px solid white;
+      }
+    }
+    .RightBar_Username {
+      font-weight: 500;
+    }
+  }

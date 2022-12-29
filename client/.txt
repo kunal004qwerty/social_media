@@ -1,0 +1,9 @@
+right way to write function
+
+// Option 1
+export const getStuff = Ids => {
+  return axios.post(...);
+};
+
+// Option 2
+export const getStuff = Ids => axios.post(...);

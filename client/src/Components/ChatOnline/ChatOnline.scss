@@ -1,0 +1,44 @@
+.ChatOnline {
+  .ChatOnline_Friend {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+
+    margin-top: 30px;
+  }
+  .ChatOnline_Img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    border: 1px solid white;
+
+    object-fit: cover;
+  }
+  .ChatOnline_Img_Container {
+    position: relative;
+    margin-right: 10px;
+
+    .ChatOnline_Badge {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: limegreen;
+      top: 2px;
+      right: 1px;
+      
+    }
+  }
+  .ChatOnline_name_div {
+    display: flex;
+    flex-direction: column;
+    .ChatOnline_Name {
+      font-weight: bold;
+    }
+    .Online {
+      font-weight: lighter;
+    }
+  }
+}

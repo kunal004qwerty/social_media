@@ -1,0 +1,41 @@
+.Modal {
+  margin-top: 20px;
+}
+.infoForm {
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 5px;
+  h3 {
+    align-self: center;
+  }
+  input {
+    padding: 10px;
+    width: 100%;
+  }
+  .Input_Field_Div {
+    padding: 0 30px;
+  }
+  .Button {
+    padding: 5px 10px;
+    width: 100px;
+    margin: 0 auto;
+  }
+}
+.Uplaod_image_Div {
+  display: flex;
+  margin: 2px 30px;
+}
+
+.UploadImage_Container {
+  // padding: 0 20px 10px 20px;
+  position: relative;
+  display: flex;
+
+  .UploadImage_Hollogram {
+    // width: 100%;
+    height: 50px;
+    object-fit: contain;
+  }
+}

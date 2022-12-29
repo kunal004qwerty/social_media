@@ -1,0 +1,133 @@
+.topbar_Container {
+  height: 50px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  position: -webkit-sticky;
+  position: fixed;
+  top: 0;
+
+  z-index: 999;
+
+  // background-color: #1da1f2;
+  background: linear-gradient(90deg, #1c7ed6 0%, #22b7d0 100%);
+  // background: linear-gradient(to right, #1c7ed6 0%, #22b7d0 100%);
+
+  //   !--------------------------TOPBAR_LEFT
+  .topbar_Left {
+    flex: 3;
+    // !---------------- LOGO
+    .logo {
+      font-size: 24px;
+      margin-left: 20px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  //   !-----------------------------TOPBAR_CENTER
+  .topbar_Center {
+    flex: 5;
+    // !------------------------- SEARCH_BAR
+    .searchbar {
+      width: 100%;
+      height: 30px;
+
+      border-radius: 30px;
+
+      display: flex;
+      align-items: center;
+
+      background-color: white;
+
+      //   !------------ SEARCH_ICON
+      .search_icon {
+        font-size: 20px !important;
+        margin-left: 10px;
+      }
+      //   !-------------- SEARCH_INPUT
+      .searchInput {
+        border: none;
+        width: 70%;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  //   !--------------------------------------- TOPBAR_RIGHT
+  .topbar_Right {
+    flex: 4;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    color: white;
+
+    .topbar_Link {
+      margin-right: 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .topbar_Icons {
+      display: flex;
+      .topbar_IconItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        cursor: pointer;
+        position: relative;
+
+        .topbar_IconBadge {
+          width: 15px;
+          height: 15px;
+          background-color: red;
+
+          border-radius: 50%;
+          color: white;
+
+          position: absolute;
+          top: -5px;
+          right: -5px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+        }
+      }
+    }
+    // !-------------- TOPBAR_IMG
+    .topbar_Img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+
+      object-fit: cover;
+
+      cursor: pointer;
+    }
+    .Log_Out_Button {
+      font-size: 30px;
+      color: white;
+      // background: black;
+      // background-clip: text;
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+      &:hover {
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .Link {
+    color: white;
+    text-decoration: none;
+  }
+}

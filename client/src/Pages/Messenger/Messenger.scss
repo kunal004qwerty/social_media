@@ -1,0 +1,83 @@
+.Messenger {
+  height: calc(100vh - 50px);
+  display: flex;
+  margin-top: 50px;
+
+  // border: 1px solid black;
+
+  .Chat_Menu {
+    flex: 3.5;
+
+    .Chat_Menu_Input {
+      width: 90%;
+      padding: 10px 0;
+      border: none;
+      border-bottom: 1px solid gray;
+    }
+  }
+
+  .Chat_Box {
+    flex: 5.5;
+
+    .Chat_Box_Wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+
+      .Chat_Box_Top {
+        height: 100%;
+        overflow-y: scroll;
+        padding-right: 10px;
+      }
+
+      .no_converstaion_text {
+        position: absolute;
+        top: 10%;
+        font-size: 50px;
+        color: rgb(224, 220, 220);
+        // text-align: center;
+        cursor: pointer;
+      }
+    }
+
+    .Chat_Box_Bottom {
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .Chat_Message_Input {
+        width: 80%;
+        height: 90px;
+        padding: 10px;
+      }
+
+      .Chat_Submit_Button {
+        width: 70px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: teal;
+        color: white;
+        background: linear-gradient(
+          90deg,
+          rgb(145, 142, 142) 0%,
+          rgba(1, 56, 66, 1) 100%
+        );
+      }
+    }
+  }
+
+  .Chat_Online {
+    flex: 3;
+  }
+}
+
+.Chat_Menu_Wrapper,
+.Chat_Box_Wrapper,
+.Chat_Online_Wrapper {
+  padding: 10px;
+  height: 100%;
+}
